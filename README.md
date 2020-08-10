@@ -1,24 +1,15 @@
 # fabric-demo
 
-## Project setup
-```
-yarn install
-```
+## Project detail
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+#### ImageLoad 原生 js 监听滚动条实现懒加载
 
-### Compiles and minifies for production
-```
-yarn build
-```
+- 在 js 中指定本地图片请求使用 require
 
-### Lints and fixes files
-```
-yarn lint
-```
+#### imagePlugin 使用 vue-lazyload 实现懒加载
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### Canvas 画布 fabric
+
+##### others
+
+- 1. 文件格式报红 setting.json 文件中添加"editor.tabSize": 2
