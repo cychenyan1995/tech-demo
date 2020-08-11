@@ -31,6 +31,7 @@
 
 - vue hook 在父组件中监听子组件的生命周期函数
 - 添加.prettierrc 文件 完善格式化代码(解决 vue template 中部自动填充空格警告问题)
+- 添加 jsconfig.json 文件 (解决使用@别名不提示路径的问题)
 
 ##### others
 
