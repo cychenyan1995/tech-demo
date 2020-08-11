@@ -7,9 +7,16 @@
 </template>
 <script>
 import Test from '@/components/test';
+import Axios from 'axios';
 export default {
   components: {
     Test,
+  },
+  created() {
+    // 请求本地文件
+    Axios.get('./js/data.json').then((rsp) => {
+      console.log(rsp);
+    });
   },
   methods: {
     // hook

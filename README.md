@@ -33,6 +33,9 @@
 - 添加.prettierrc 文件 完善格式化代码(解决 vue template 中部自动填充空格警告问题)
 - 添加 jsconfig.json 文件 (解决使用@别名不提示路径的问题)
 
+- vue 利用 axios 加载本地 json 文件
+  需要将文件放在 public 目录下(vue-cli3 以上的版本中，只要你把想请求的文件放在 localhost:8080 后面，vue 都会自动会 public 文件夹下查找)
+
 ##### others
 
 - 1. 文件格式报红 setting.json 文件中添加"editor.tabSize": 2
