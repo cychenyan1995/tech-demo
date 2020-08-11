@@ -2,19 +2,13 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
     <!-- <Canvas msg="Welcome to Your Vue.js App" /> -->
-    <Test @hook:updated="handleTestUpdate" />
-    <router-link to="/imageLoad" style="margin-right: 20px;">跳转</router-link>
-    <router-link to="/imageLazy">跳转插件</router-link>
     <router-view></router-view>
   </div>
 </template>
 <script>
-import Test from './components/test';
 export default {
   name: 'App',
-  components: {
-    Test,
-  },
+
   props: {
     imgDataUrl: {
       type: String,

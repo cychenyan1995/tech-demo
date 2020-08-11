@@ -6,6 +6,11 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
+      name: 'index',
+      path: '/',
+      component: () => import('./../page/index/index'),
+    },
+    {
       name: 'imageLoad',
       path: '/imageLoad',
       component: () => import('./../components/imageLazy/ImageLoad.vue'),
