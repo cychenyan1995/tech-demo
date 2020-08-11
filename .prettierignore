@@ -1,0 +1,4 @@
+# Ignore dir:
+/.kiwi
+/src/icons
+/src/modules/**/*.js

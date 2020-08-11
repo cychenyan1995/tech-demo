@@ -1,8 +1,8 @@
 <template>
   <!-- 使用vue-lazyload实现懒加载 -->
-  <div>
+  <div class="page">
     <!-- 懒加载 -->
-    <img v-for="(img, index) in urls" :key="index" v-lazy="img" alt="" />
+    <img v-for="(img, index) in urls" :key="index" v-lazy="img" alt />
     <!-- require请求本地图片 -->
     <!-- <img :src="imgUrl" alt="" /> -->
   </div>
@@ -25,9 +25,11 @@ export default {
   },
 };
 </script>
-<style scoped>
-img {
-  width: 200px;
-  height: 200px;
+<style lang="scss" scoped>
+.page {
+  img {
+    width: 200px;
+    height: 200px;
+  }
 }
 </style>

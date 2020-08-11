@@ -10,6 +10,13 @@
 
 #### Canvas 画布 fabric
 
+#### 2020.8.10
+
+- 添加 editconfig 文件 帮助开发人员在不同的编辑器和 IDE 之间定义和维护一致的编码样式
+- 添加 eslintrc.js 文件(解决：debugger 关键字报错)
+- 安装 node-sass (1.yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass切换镜像，yarn add node-sass 安装 注意：安装完后需要将淘宝镜像再切换回来)
+- 安装 prettier (prettier eslint-config-prettier eslint-plugin-prettier)
+
 ##### others
 
 - 1. 文件格式报红 setting.json 文件中添加"editor.tabSize": 2
