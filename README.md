@@ -17,6 +17,21 @@
 - 安装 node-sass (1.yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass切换镜像，yarn add node-sass 安装 注意：安装完后需要将淘宝镜像再切换回来)
 - 安装 prettier (prettier eslint-config-prettier eslint-plugin-prettier)
 
+#### 2020.8.11
+
+- vue hook 监听生命周期函数
+
+```
+    // vue通过hook监听组件的beforeDestroy生命周期函数 this.$on/$once('hook:生命周期',callback)
+    this.$on("hook:beforeDestroy", () => {
+      console.log("beforeDestroy...");
+      window.removeEventListener("resize", this.handleResize);
+    });
+```
+
+- vue hook 在父组件中监听子组件的生命周期函数
+- 添加.prettierrc 文件 完善格式化代码(解决 vue template 中部自动填充空格警告问题)
+
 ##### others
 
 - 1. 文件格式报红 setting.json 文件中添加"editor.tabSize": 2

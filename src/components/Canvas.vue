@@ -6,16 +6,16 @@
 </template>
 
 <script>
-import { fabric } from "fabric";
+import { fabric } from 'fabric';
 export default {
-  name: "Canvas",
+  name: 'Canvas',
   data() {
     return {};
   },
   created() {},
   mounted() {
     // this.getCanvas();
-    var canvas = new fabric.Canvas("canvas");
+    var canvas = new fabric.Canvas('canvas');
     this.getFabricCanvas(canvas, 20, 20);
     this.getFabricCanvas(canvas, 120, 20);
   },
@@ -24,7 +24,7 @@ export default {
       var rect = new fabric.Rect({
         left: left, //距离画布左侧的距离，单位是像素
         top: top, //距离画布上边的距离
-        fill: "#42b983", //填充的颜色
+        fill: '#42b983', //填充的颜色
         width: 100, //方形的宽度
         height: 100, //方形的高度
       });
@@ -33,16 +33,16 @@ export default {
       //   console.log(options);
       //   console.log(options.e.clientX, options.e.clientY);
       // });
-      rect.on("scaled", function(options) {
+      rect.on('scaled', function (options) {
         console.log(options);
         console.log(options.e.clientX, options.e.clientY);
       });
       canvas.add(rect);
     },
     getCanvas() {
-      var el = document.getElementById("hello");
-      var ctx = el.getContext("2d");
-      ctx.fillStyle = "red";
+      var el = document.getElementById('hello');
+      var ctx = el.getContext('2d');
+      ctx.fillStyle = 'red';
       ctx.fillRect(100, 100, 20, 20);
     },
   },

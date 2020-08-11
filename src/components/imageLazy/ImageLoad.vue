@@ -5,26 +5,26 @@
   </div>
 </template>
 <script>
-import { throttle } from "lodash";
+import { throttle } from 'lodash';
 export default {
   data() {
     return {
       imgs: [
-        require("./../../assets/logo.png"),
-        require("./../../assets/test1.jpg"),
-        require("./../../assets/test2.jpg"),
-        require("./../../assets/test3.jpg"),
-        require("./../../assets/test4.jpg"),
-        require("./../../assets/test5.jpg"),
+        require('./../../assets/logo.png'),
+        require('./../../assets/test1.jpg'),
+        require('./../../assets/test2.jpg'),
+        require('./../../assets/test3.jpg'),
+        require('./../../assets/test4.jpg'),
+        require('./../../assets/test5.jpg'),
       ],
     };
   },
   mounted() {
-    this.imags = document.getElementsByTagName("img");
+    this.imags = document.getElementsByTagName('img');
     // 初始监听
     this.handleScroll();
     // window.addEventListener第三个参数表示是否捕获和冒泡
-    window.addEventListener("scroll", throttle(this.handleScroll, 200), true);
+    window.addEventListener('scroll', throttle(this.handleScroll, 200), true);
   },
   methods: {
     handleScroll() {
@@ -36,7 +36,7 @@ export default {
       this.imags.forEach((item, index) => {
         // 当滚动区域+可视区域>图片距离顶部的距离时加载图片
         if (scrollTop + innerHeight > this.getTop(item)) {
-          this.imags[index].src = item.getAttribute("data-src"); //item.dataset.src === item.getAttribute("data-src")
+          this.imags[index].src = item.getAttribute('data-src'); //item.dataset.src === item.getAttribute("data-src")
         }
       });
     },
@@ -48,7 +48,7 @@ export default {
   },
   destroyed() {
     // 销毁
-    window.removeEventListener("scroll", this.handleScroll, true);
+    window.removeEventListener('scroll', this.handleScroll, true);
   },
 };
 </script>

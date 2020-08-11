@@ -19,7 +19,7 @@ module.exports = {
     "no-fallthrough": "off",
   },
   parserOptions: {
-    ecmaVersion: 6, //指定ECMAScript支持的版本，6为ES6
+    ecmaVersion: 7, //指定ECMAScript支持的版本，6为ES6
     sourceType: "module", //指定来源的类型，有两种”script”或”module”
     parser: "babel-eslint",
   },
