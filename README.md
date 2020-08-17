@@ -36,6 +36,13 @@
 - vue 利用 axios 加载本地 json 文件
   需要将文件放在 public 目录下(vue-cli3 以上的版本中，只要你把想请求的文件放在 localhost:8080 后面，vue 都会自动会 public 文件夹下查找)
 
+##### 2020.8.17
+
+- 添加 env 相关文件
+- 添加 vue.config.js 文件
+  1. 安装 webpack
+  2. 配置 scss 全局加载变量
+
 ##### others
 
 - 1. 文件格式报红 setting.json 文件中添加"editor.tabSize": 2

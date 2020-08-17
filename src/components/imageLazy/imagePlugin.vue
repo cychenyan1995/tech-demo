@@ -39,6 +39,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .page {
+  background-color: $blue;
   img {
     width: 200px;
     height: 200px;
