@@ -19,7 +19,7 @@ module.exports = {
     // 设置应用的title
     config.set('name', process.env.VUE_APP_TITLE);
     // 设置sourcemap
-    config.when(process.env.NODE_ENV === 'development', (config) => {
+    config.when(process.env.NODE_ENV !== 'development', (config) => {
       config.devtool('cheap-eval-source-map');
     });
     // remove vue-cli-service's progress output
